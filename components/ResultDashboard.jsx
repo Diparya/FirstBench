@@ -1,7 +1,7 @@
 export default function ResultDashboard() {
     return (
         <div className="min-h-screen bg-gray-100">
-            <header className="bg-gray-800 text-white py-4 mb-5">
+            <header className="bg-gray-800 text-white py-4 mb-5 md:px-20 px-0">
                 <div className="container mx-auto flex justify-between items-center px-4">
                     <div className="text-2xl font-bold flex items-center cursor-pointer">
                         <img src="images/logo.png" alt="Firstbench" width={40} height={40} className="mr-2" />
@@ -16,7 +16,7 @@ export default function ResultDashboard() {
                         <a href="#" className="hover:text-purple-400">Mock Test</a>
                     </nav>
                     <div>
-                        <button className="flex items-center space-x-2 bg-purple-600 px-4 py-2 rounded-md text-white">
+                        <button className="flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-md text-white">
                             <p>Profile</p>
                             <img src="images/down-arrow.png" alt="down-arrow"  width={20} height={20}/>
                         </button>
@@ -24,9 +24,9 @@ export default function ResultDashboard() {
                 </div>
             </header>
 
-            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5 pb-3">
+            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5 pb-3 md:px-24 px-0">
                 <div className="grid grid-cols-1 lg:grid-cols-1 md:row-span-5 rounded-lg border border-gray-300 bg-violet-50 p-6 ml-5">
-                    <div className="text-center">
+                    <div className="text-center mb-3 md:mb-0">
                         <img src="/images/work.svg" alt="Result" width={150} height={150} className="mx-auto" />
                         <h2 className="text-2xl font-bold text-violet-500 mt-4">Your Result!</h2>
                         <p className=" text-gray-400">All your insights & details in one place</p>
@@ -36,7 +36,7 @@ export default function ResultDashboard() {
                         <div className="bg-violet-50 p-2 rounded-lg flex justify-between items-center">
                             <img src="images/cart.png" alt="cart" className="h-12 mr-2 rounded-md" />
                             <div>
-                                <h3 className="text-[10px] bg-violet-500 rounded-lg p-1">You Passed</h3>
+                                <h3 className="text-[10px] bg-violet-500 rounded-lg p-1 text-center">You Passed</h3>
                                 <p className="text-gray-400"><span className="font-semibold text-black text-lg mt-1">136</span> / 240</p>
                             </div>
                             <div className="flex flex-col justify-center items-center">
@@ -72,7 +72,7 @@ export default function ResultDashboard() {
                             <p className="text-gray-400 text-sm">Improve your score by practicing more.</p>
                         </div>
 
-                        <button className="bg-violet-500 w-full text-white py-2 rounded-lg">Practice More</button>
+                        <button className="bg-violet-500 hover:bg-purple-700 w-full text-white py-2 rounded-lg">Practice More</button>
 
                     </div>
 
@@ -81,7 +81,7 @@ export default function ResultDashboard() {
                             <h4 className="font-semibold text-lg text-black mb-2">Revisit Paper</h4>
                             <p className="text-sm text-gray-500">Challenge your friends by simply sharing a link to this test</p>
                         </div>
-                        <button className="mt-5 bg-violet-500 text-white px-16 py-2 rounded-lg">Visit</button>
+                        <button className="mt-5 bg-violet-500 hover:bg-purple-700 text-white px-16 py-2 rounded-lg">Visit</button>
 
                     </div>
                 </div>
